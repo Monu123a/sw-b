@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Player</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        video {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <video controls>
+        <source src="your-video-file.mp4" type="video/mp4">
+        <source src="your-video-file.ogg" type="video/ogg">
+        <audio src="your-audio-file.mp3"></audio>
+        Your browser does not support the video tag.
+    </video>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Tuition - Premier Education Group</title>
+    <style>
+        /* Global Dark Theme Styling */
+        
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        /* Navigation Bar */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .navbar a {
+            color: #e0e0e0;
+            margin: 0 15px;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        
+        .navbar img {
+            height: 60px;
+        }
+        /* Section Styling */
+        
+        .section {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 80px auto;
+            /* Center with margin to avoid overlap with fixed navbar */
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 2.5em;
+            color: #ffab91;
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .faq {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        
+        .faq h3 {
+            color: #ffab91;
+            margin-top: 20px;
+        }
+        
+        .faq p {
+            margin-bottom: 10px;
+        }
+        /* Footer */
+        
+        .footer {
+            background-color: #1e1e1e;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer .quick-links a {
+            color: #ff6e40;
+            margin: 0 15px;
+            display: inline-block;
+        }
+        
+        .footer .contact-info p,
+        .footer .social-media a {
+            color: #b0bec5;
+        }
+        
+        .footer .social-media a {
+            margin: 0 10px;
+            color: #ff6e40;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#"><img src="data:image/jpeg;base64,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"
+                alt="Premier Education Logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div>
+
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <!-- Home Tuition Section -->
+    <section class="section" id="home-tuition">
+        <h2>Home Tuition</h2>
+        <p>At Premier Education Group, we provide personalized home tuition services tailored to each student’s needs. Our qualified teachers come to your home, ensuring a comfortable learning environment.</p>
+
+        <h2>Features of Home Tuition</h2>
+        <p>- One-on-One Learning: Focused attention on each student.<br> - Flexible Scheduling: Classes can be arranged at convenient times.<br> - Personalized Curriculum: Tailored to meet individual student goals.<br> - Safe Environment: Learning in the
+            comfort of home enhances focus and reduces distractions.</p>
+
+        <h2>Future of Home Tuition</h2>
+        <p>We aim to revolutionize home tuition with technology integration, providing resources and tools that enhance the learning experience. Our future goals include expanding our network of qualified tutors and offering additional online resources.</p>
+
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq">
+            <h3>1. What is the duration of each home tuition session?</h3>
+            <p>Each session typically lasts between 1 to 2 hours, depending on the subject and student preference.</p>
+
+            <h3>2. How are the course timings scheduled?</h3>
+            <p>Course timings are flexible and can be adjusted based on the student's and tutor's availability. We aim to accommodate everyone's schedule.</p>
+
+            <h3>3. How do you ensure the legitimacy of your tutors?</h3>
+            <p>All tutors undergo a thorough vetting process, including background checks, interviews, and reference checks, ensuring they meet our quality standards.</p>
+
+            <h3>4. Are the course materials provided?</h3>
+            <p>Yes, we provide necessary course materials, but students are encouraged to use their own textbooks and resources to enhance learning.</p>
+
+            <h3>5. What if I want to change my tutor?</h3>
+            <p>If you feel that a tutor isn't the right fit, we can facilitate a change at any time based on your feedback.</p>
+
+            <h3>6. Can I request a trial session?</h3>
+            <p>Yes, we offer trial sessions so you can assess the tutor's teaching style and determine if it suits your learning needs.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="quick-links">
+            <a href="course.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="blog.html">Blog</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="blog.html">FAQs</a>
+        </div>
+        <div class="contact-info">
+            <p>Address: Your Address Here</p>
+            <p>Phone: Your Phone Number Here</p>
+            <p>Email: info@premiereducation.com</p>
+            <div class="social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

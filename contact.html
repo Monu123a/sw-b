@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Premier Education Group</title>
+    <style>
+        /* Global Dark Theme Styling */
+        
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        /* Navigation Bar */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e1e1e;
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .navbar a {
+            color: #e0e0e0;
+            margin: 0 15px;
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        
+        .navbar img {
+            height: 60px;
+        }
+        /* Contact Section */
+        
+        .contact-section {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 80px auto;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 2.5em;
+            color: #ffab91;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+        }
+        
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-media a {
+            color: #ff6e40;
+            margin: 0 15px;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        /* Footer */
+        
+        .footer {
+            background-color: #1e1e1e;
+            padding: 40px;
+            text-align: center;
+            color: #b0bec5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#"><img src="data:image/jpeg;base64,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"
+                alt="Premier Education Logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div>
+
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>We’re here to help! Reach out to us via phone, email, or through our social media channels. Our team is available to answer your questions and provide assistance with all inquiries.</p>
+
+        <div class="contact-info">
+            <h3>Emails</h3>
+            <p>support@premiereducation.com</p>
+            <p>info@premiereducation.com</p>
+            <p>admissions@premiereducation.com</p>
+            <p>franchise@premiereducation.com</p>
+
+            <h3>Phone Numbers</h3>
+            <p>+91 98765 43210</p>
+            <p>+91 87654 32109</p>
+            <p>+91 76543 21098</p>
+            <p>+91 65432 10987</p>
+        </div>
+        <a href="https://www.facebook.com/premiereducation" target="_blank" title="Facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40">
+        </a>
+        <a href="https://www.instagram.com/premiereducation" target="_blank" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40">
+        </a>
+        <a href="https://www.linkedin.com/company/premiereducation" target="_blank" title="LinkedIn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" width="40">
+        </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Premier Education Group &copy; 2023. All rights reserved.</p>
+        <p><a href="#privacy-policy" style="color: #ff6e40;">Privacy Policy</a> | <a href="#terms" style="color: #ff6e40;">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>
